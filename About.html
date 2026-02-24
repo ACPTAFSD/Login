@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Creative Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg1: #0f172a;
+            --bg2: #0b2545;
+            --accent: #7c3aed;
+            --glass: rgba(255,255,255,0.06);
+            --muted: rgba(255,255,255,0.75);
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%;margin:0;font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#fff}
+        .wrap{max-width:1100px;margin:40px auto;padding:28px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:14px;padding:28px;margin-bottom:18px;backdrop-filter: blur(6px);box-shadow: 0 6px 30px rgba(2,6,23,0.6)}
+        .hero{display:flex;gap:24px;align-items:center}
+        .hero .left{flex:1}
+        .title{font-size:2.2rem;margin:0 0 8px;color:linear-gradient(90deg,#fff,#d1c4ff)}
+        .title strong{color:var(--accent)}
+        .lead{color:var(--muted);line-height:1.6}
+        .cta{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:#fff;text-decoration:none;font-weight:600}
+        .hero .art{width:320px;flex:0 0 320px}
+        .art .blob{width:100%;height:240px;border-radius:12px;background:radial-gradient(circle at 20% 10%, rgba(255,255,255,0.06), transparent 30%), linear-gradient(135deg, rgba(124,58,237,0.18), rgba(59,130,246,0.12));display:flex;align-items:center;justify-content:center}
+        .art svg{width:220px;height:220px;opacity:0.95}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+        .feature{padding:18px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+        .feature h3{margin:0 0 8px;font-size:1.05rem}
+        .team{display:flex;gap:12px;align-items:center;margin-top:12px}
+        .avatar{width:64px;height:64px;border-radius:50%;display:inline-grid;place-items:center;font-weight:700;background:linear-gradient(135deg,#7c3aed,#06b6d4);color:#fff}
+        footer{opacity:0.9;color:var(--muted);text-align:center;margin-top:10px;font-size:0.9rem}
+        @media (max-width:720px){.hero{flex-direction:column}.hero .art{width:100%;flex:auto}.title{font-size:1.6rem}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="card hero">
+            <div class="left">
+                <h1 class="title">We are a small <strong>creative studio</strong> crafting big ideas</h1>
+                <p class="lead">We combine design, code, and strategy to build digital experiences people remember. From concept to launch, we focus on clarity, craft, and measurable impact.</p>
+                <a class="cta" href="index.html">Back to Home ▸</a>
+                <div class="grid" style="margin-top:18px">
+                    <div class="feature">
+                        <h3>Our Mission</h3>
+                        <p style="margin:0;color:var(--muted)">Design with purpose. Build with empathy. Deliver with speed.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>What We Do</h3>
+                        <p style="margin:0;color:var(--muted)">Branding, Web & App Design, Frontend Development, UX Research.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Why Choose Us</h3>
+                        <p style="margin:0;color:var(--muted)">Small, focused teams. Big-picture thinking. Real results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <div class="blob">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/>
+                                <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.85"/>
+                            </linearGradient>
+                        </defs>
+                        <g fill="url(#g1)">
+                            <path d="M43.6,-58.9C57.8,-51.6,71.5,-42.8,75.6,-30.3C79.7,-17.9,74.4,-1.8,67.4,11.3C60.4,24.4,51.7,34.6,40.6,41.9C29.5,49.2,16,53.7,2.4,52.7C-11.2,51.7,-22.5,45.3,-34,38.7C-45.4,32.1,-57.1,25.3,-63.4,13.6C-69.8,1.8,-70.8,-14.8,-63.6,-26.6C-56.5,-38.3,-41.1,-45.3,-27.3,-51.3C-13.6,-57.3,-0.8,-62.4,11.9,-65.3C24.7,-68.2,37.5,-69.9,43.6,-58.9Z" transform="translate(100 100)"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2 style="margin-top:0">Our Values</h2>
+            <p style="color:var(--muted)">We value craft, honesty, and curiosity. Every project is an opportunity to learn, refine, and create something that matters.</p>
+            <div class="team">
+                <div class="avatar">AN</div>
+                <div style="flex:1">
+                    <strong>Alex Newton</strong>
+                    <div style="color:var(--muted)">Founder & Product Designer</div>
+                </div>
+                <div class="avatar">RM</div>
+                <div style="flex:1">
+                    <strong>Rita Malik</strong>
+                    <div style="color:var(--muted)">Lead Developer</div>
+                </div>
+                <div class="avatar">JP</div>
+                <div style="flex:1">
+                    <strong>J. Park</strong>
+                    <div style="color:var(--muted)">Strategy & Growth</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 style="margin-top:0">How We Work</h2>
+            <div class="grid">
+                <div class="feature"><h3>Discover</h3><p style="margin:0;color:var(--muted)">Research, interviews, and alignment workshops.</p></div>
+                <div class="feature"><h3>Design</h3><p style="margin:0;color:var(--muted)">Wireframes, prototypes, and visual systems.</p></div>
+                <div class="feature"><h3>Build</h3><p style="margin:0;color:var(--muted)">Accessible, performant frontend and polished delivery.</p></div>
+            </div>
+        </section>
+
+        <footer>
+            <div>© <strong>Creative Studio</strong> — Built with care. — <a href="mailto:hello@studio.example" style="color:#cbd5e1;text-decoration:none">hello@studio.example</a></div>
+        </footer>
+    </div>
+</body>
+</html>
